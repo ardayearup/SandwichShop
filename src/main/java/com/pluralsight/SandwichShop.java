@@ -9,7 +9,7 @@ public class SandwichShop {
         double regularPrice = 5.45;
         double largePrice = 8.95;
 
-        System.out.print("Student age: ");
+        System.out.print("Age: ");
         int age = keyboard.nextInt();
         keyboard.nextLine();
 
@@ -42,8 +42,10 @@ public class SandwichShop {
             double finalPrice4 = largePrice - (largePrice*20/100);
             System.out.printf("Senior gets 20%% discount and they will pay: " + finalPrice4 + "$");
         }
+        else if (sizeChoice.equalsIgnoreCase("regular")) {
+            System.out.printf("There will be no discount and you will pay " + regularPrice); }
         else {
-            System.out.printf("There will be no discount"); }
+            System.out.printf("There will be no discount and you will pay " +  largePrice); }
 
 
     }}
