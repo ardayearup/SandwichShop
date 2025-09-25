@@ -12,8 +12,16 @@ public class SandwichShop {
         System.out.print("Student age: ");
         int age = keyboard.nextInt();
         keyboard.nextLine();
-        System.out.print("Size choice: ");
+
+        System.out.print("Size choice (regular/large): ");
         String sizeChoice = keyboard.nextLine();
+
+        System.out.print("Loaded (yes/no): ");
+        String loadedChoice = keyboard.nextLine();
+
+         if (loadedChoice.equalsIgnoreCase("Yes"))
+         { regularPrice = regularPrice +1;
+             largePrice = largePrice +1.75; }
 
         if (age <= 17 && (sizeChoice.equalsIgnoreCase("regular")))
         {
